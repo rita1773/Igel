@@ -1,0 +1,121 @@
+.small {
+  width: 200px;
+}
+
+.cartgrid {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-content: center;
+}
+
+.sectioncart {
+  padding-bottom: var(--y-gutter);
+  margin-left: var(--container-gutter);
+  margin-right: var(--container-gutter);
+  justify-content: center;
+  min-height: var(--section-min-h);
+  position: relative;
+}
+
+.carth {
+  font-size: 5rem;
+  color: var(--col-red);
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+.cartrow {
+  display: grid;
+  /* grid-template-columns: 30% 45% 25%; */
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-content: center;
+}
+
+.placecenter {
+  place-self: center;
+  font-size: 2rem;
+}
+
+.quantity input {
+  width: 5rem;
+  height: 4rem;
+  line-height: 1.65;
+  float: left;
+  display: block;
+  padding: 0;
+  margin: 0;
+  padding-left: 20px;
+  border: 1px solid black;
+}
+
+.subtotal {
+  padding-top: 5%;
+  text-align: center;
+}
+
+.iconbut {
+  padding: 0%;
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+}
+.iconbut:hover{
+  background-color: transparent;
+}
+
+.fontfive {
+  font-size: 4rem;
+}
+
+.car-alt{
+  /* box-shadow:0 1px 2px rgba(0,0,0,0.07), 
+  0 2px 4px rgba(0,0,0,0.07), 
+  0 4px 8px rgba(0,0,0,0.07), 
+  0 8px 16px rgba(0,0,0,0.07),
+  0 16px 32px rgba(0,0,0,0.07), 
+  0 32px 64px rgba(0,0,0,0.07); */
+
+  border-bottom: 5px solid var(--col-red);
+}
+.fa-trash-o:hover {
+  color: var(--col-red);
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .placecenter {
+    place-self: center;
+    font-size: 1.5rem;
+    
+    padding: 10px 0px;
+}
+
+
+}

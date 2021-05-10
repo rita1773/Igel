@@ -1,0 +1,99 @@
+.header {
+    height: 6.5rem;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+  
+}
+
+.head{
+    padding-top: 3rem;
+}
+
+.nav ul li {
+
+    list-style: none;
+    float: right;
+    margin-left: 0;
+    font-family: var(--font-jose);
+
+}
+
+.nav ul li a {
+
+    text-decoration: none;
+
+    letter-spacing: 0.09rem;
+    justify-content: right;
+    display: inline-block;
+    font-family: var(--font-jose);
+
+    font-weight: 500;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    text-align: center;
+   
+}
+
+.nav ul li ul li a {
+    
+    padding: 0;
+    padding: 10px;
+    margin-top: 0;
+    text-align: left;
+}
+.badge {
+    background-color: var(--col-red);
+    color: #ffffff;
+    border-radius: 50%;
+    padding: 0.5rem 0.8rem;
+    font-size: 1.7rem;
+    margin-left: 0.2rem;
+  }
+
+  .logo{
+      font-size: 4rem;
+      font-family: 'ValkyRegular';
+  }
+
+  /* Dropdown */
+.dropdown {
+    display: inline-block;
+    position: relative;
+  }
+  .dropdown-content {
+    position: absolute;
+    display: none;
+    right: 0;
+    min-width: 16rem;
+    /* padding: 1rem; */
+    z-index: 1;
+    background-color: var(--col-bgpalewhite) ;
+    margin: 0;
+    margin-top: 0.1rem;
+    border-radius: 0.5rem;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  /* =========================== */
+
+  .headert{
+    --global-banner-height: 0px;
+    align-items: flex-end;
+    display: flex;
+    flex-wrap: nowrap;
+    /* height: var(--header-height-inner); */
+    padding-bottom: var(--y-gutter);
+    margin-left: var(--container-gutter);
+    margin-right: var(--container-gutter);
+    justify-content: space-between;
+  }
+
+  @media only screen and (max-width: 600px) {
+
+    .left, .nav ul li a{
+      font-size: 1.6rem;
+    }
+
+  }

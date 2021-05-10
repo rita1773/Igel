@@ -1,0 +1,253 @@
+.row{
+    display: grid;
+    /* grid-template-columns: 30% 45% 25%; */
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    margin-top: 5%;
+}
+.prod-name{
+    font-size: 12rem;
+    line-height: 12rem;
+    margin-bottom: -1rem;
+    margin-top: -6rem;
+
+}
+
+li{
+    text-decoration: none;
+    list-style: none;
+}
+.col-1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.col-2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    /* -webkit-transform: scaleX(-1);
+  transform: scaleX(-1); */
+  z-index: 0;
+}
+
+.col-3{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    place-self: center;
+    z-index: 100;
+
+    
+}
+h1{
+    color: var(--col-red);
+}
+
+.quan{
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color:transparent;
+    border-radius: 50px;
+    border: 2px solid black;
+    text-decoration: none;
+    color: black;
+    font-family: 'Spartan', sans-serif;
+
+    font-weight: 500;
+    display: inline-block;
+    font-size: 1.3rem;
+    letter-spacing: 0.06rem;
+    transition-property: background-color, color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.large{
+    width:80rem;
+}
+
+.cartbutqua{
+
+}
+.prod-img{
+    /* background-color: #f8f8f4; */
+    
+}
+/* body{
+    background-color: #f3eee8;
+} */
+
+.anim-img{
+    animation: mover 3s ease-in-out infinite;
+    margin-left: -23rem;
+    z-index: -1;
+    /* background-color: #f8f8f4; */
+    
+}
+
+.add-qua{
+    
+}
+@keyframes mover{
+    0% {
+
+        transform: translatey(0px);
+    }
+
+    50% {
+
+        transform: translatey(-20px);
+    }
+
+    100% {
+
+        transform: translatey(0px);
+    }
+}
+
+.p_outer{
+    width:100%;
+    background-color: #f8f8f4;
+    position: relative;
+    
+}
+
+
+.col-3-des{
+    line-height: 2rem;
+    font-size: 2rem;
+}
+.col-3-price{
+    font-family: var(--font-valky);
+    font-size: 3rem;
+}
+.qua{
+    /* border-style: solid; */
+    align-items: center;
+   
+    cursor: pointer;
+    display: flex;
+    flex-wrap: nowrap;
+    
+    
+    overflow: hidden; 
+    position: absolute; 
+    text-align: center;
+    /* padding-right: 7%;
+    padding-left: 7%; */
+    border-radius: 50px;
+    float: left;
+    
+}
+
+.quab{
+    border:none;
+    /* padding: 0%; */
+    /* padding-left: 2%;
+    padding-right: 2%; */
+    box-shadow: none;
+    margin: 0%;
+    padding: 15px 37px;
+    font-size: var(--font-psize);
+}
+
+.quab:active{
+    outline: none;
+    -webkit-appearance: none;
+}
+
+.quab:focus{
+    outline: none;
+    -webkit-appearance: none;
+}
+
+.quab:hover{
+    outline: none;
+    -webkit-appearance: none;
+}
+
+
+
+.floatleft{
+    float: left;
+}
+
+.primary{
+    margin: 0%;
+}
+
+.probut{
+    padding: 13px 61px;
+    
+    background-color:var(--col-red);
+    border-radius: 50px;
+    border: 2px solid var(--col-red);
+    text-decoration: none;
+    color: white;
+    font-family: var(--font-jose);
+
+    font-weight: 500;
+    display: inline-block;
+    font-size: 1.5rem;
+    letter-spacing: 0.06rem;
+    transition-property: background-color, color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+
+}
+
+.probut:hover,
+.probut:active{
+    background-color: transparent;
+    color: var(--col-red);
+}
+
+.quab:hover{
+    background-color: transparent;
+    color: var(--col-red);
+    transform: scale(1.7);
+}
+
+@media only screen and (max-width: 600px) {
+    .large {
+        width: 30rem;
+    }
+    .prod-name {
+        font-size: 4rem;
+    line-height: 5rem;
+        margin-bottom: -1rem;
+        margin-top: -6rem;
+    }
+    .col-3 {
+       grid-column-start: auto;
+        grid-column-end: auto;
+    }
+    .sec_color {
+      
+        margin-left: 30px;
+    }
+    .col-3-des {
+        line-height: 2rem;
+        font-size: 1.5rem;
+    }
+    .col-3-price {
+        font-family: var(--font-valky);
+        font-size: 2rem;
+    }
+    .probut {
+        padding: 11px 33px;
+    }
+
+    .quab {
+       
+        padding: 10px 30px;
+        font-size: 2rem;
+    }
+    .anim-img {
+      
+        margin-left: -29rem;
+       
+    }
+}
