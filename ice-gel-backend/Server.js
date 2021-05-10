@@ -39,17 +39,17 @@ app.use('/uploads', express.static(path.join(__dirname, '/uploads')));
 //   res.send('Server is ready');
 // });
 
-app.use(express.static(path.join(__dirname, '../ice-gel/build')));
+app.use(express.static(path.join(__dirname, '/ice-gel/build')));
 app.get('*', (req, res) =>
-  res.sendFile(path.join(__dirname, '../ice-gel/build/index.html'))
+  res.sendFile(path.join(__dirname, '/ice-gel/build/index.html'))
 );
 
 if (process.env.NODE_ENV == 'production') {
   // Set static folder
-  app.use(express.static('../ice-gel/build'));
+  app.use(express.static('/ice-gel/build'));
 
   app.get('*', (req, res) =>
-  res.sendFile(path.join(__dirname, '../ice-gel/build/index.html'))
+  res.sendFile(path.join(__dirname, '/ice-gel/build/index.html'))
   );
 }
 // app.get('/', (req, res) => {
