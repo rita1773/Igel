@@ -46,7 +46,7 @@ app.get('*', (req, res) =>
 
 if (process.env.NODE_ENV == 'production') {
   // Set static folder
-  app.use(express.static('/ice-gel/build'));
+  app.use(express.static('../ice-gel/build'));
 
   app.get('*', (req, res) =>
   res.sendFile(path.join(__dirname, '../ice-gel/build/index.html'))
