@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.99b65deb.chunk.css",
+    "main.js": "/static/js/main.61f8c07d.chunk.js",
+    "main.js.map": "/static/js/main.61f8c07d.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.552e73ee.js",
+    "runtime-main.js.map": "/static/js/runtime-main.552e73ee.js.map",
+    "static/css/2.8bae3570.chunk.css": "/static/css/2.8bae3570.chunk.css",
+    "static/js/2.1c1c0183.chunk.js": "/static/js/2.1c1c0183.chunk.js",
+    "static/js/2.1c1c0183.chunk.js.map": "/static/js/2.1c1c0183.chunk.js.map",
+    "static/js/3.5a94708c.chunk.js": "/static/js/3.5a94708c.chunk.js",
+    "static/js/3.5a94708c.chunk.js.map": "/static/js/3.5a94708c.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.8bae3570.chunk.css.map": "/static/css/2.8bae3570.chunk.css.map",
+    "static/css/main.99b65deb.chunk.css.map": "/static/css/main.99b65deb.chunk.css.map",
+    "static/js/2.1c1c0183.chunk.js.LICENSE.txt": "/static/js/2.1c1c0183.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/ValkyRegular.d79e59cc.ttf",
+    "static/media/img1.7658c96b.jpg": "/static/media/img1.7658c96b.jpg",
+    "static/media/img4.92e08bc6.PNG": "/static/media/img4.92e08bc6.PNG",
+    "static/media/masters.2114cfb9.png": "/static/media/masters.2114cfb9.png",
+    "static/media/video1.dce499bd.mp4": "/static/media/video1.dce499bd.mp4",
+    "static/media/video2.7d3fb5e1.mp4": "/static/media/video2.7d3fb5e1.mp4"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.552e73ee.js",
+    "static/css/2.8bae3570.chunk.css",
+    "static/js/2.1c1c0183.chunk.js",
+    "static/css/main.99b65deb.chunk.css",
+    "static/js/main.61f8c07d.chunk.js"
+  ]
+}
