@@ -11,6 +11,12 @@ import uploadRouter from './routers/uploadRouter.js';
 dotenv.config();
 
 const app = express();
+app.use(cors({
+origin: ["https://igel.vercel.app"],
+methods:["POST", "GET"],
+credential: true
+}
+));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
